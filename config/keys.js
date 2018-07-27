@@ -6,6 +6,9 @@ module.exports = {
     },
     mongodb:{
         dbURI:'mongodb://kartik:kkalra1997@ds243931.mlab.com:43931/nn-oauth-test'
+    },
+    session:{
+        cookieKey:'theCodeInterestProjectForKCA '
     }
 };
  

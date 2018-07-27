@@ -1,4 +1,4 @@
- <html>
+<html>
     <head>
         <meta charset="utf-8">
         <title>
@@ -44,26 +44,28 @@
 <body>
     <nav>
         <ul>
-            <li>
-                    <% if (user){%>
+        
+                <% if (user){%>
                     <li><a href="/auth/logout">Logout</a></li>
                     <% }else{ %>
                     <li><a href="/auth/login">Login</a></li>
                     <%}%>
 
                     <li><a href="/" >Homepage</a></li>
-                    <li><a href="/profile">Profile</a></li>
-            </li>
+                    <li><a href="/profile">Profile</a></li> 
+            
         </ul>
     </nav>
     <header>
-        <h1> OAuth </h1>
-        <h2>
-            Homepage
-        </h2>
+        <h1> WELCOME TO YOUR PROFILE, <%= user.username %></h1>
+        <p>
+            Extra information about you 
+        </p>
     </header>
     <main>
-        <p> OAuth test</p>
+       <img src="<%=user.thumbnail %>"/>
+       <p>This is your profile thumbnail</p>  
+         
     </main>
 </body>
     </html>
