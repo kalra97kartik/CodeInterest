@@ -22,6 +22,7 @@ app.use(passport.initialize());
 app.use(passport.session()); 
 
 console.log('cha cha')
+console.log("hi")
 
 //connect to mongodb
 mongoose.connect(keys.mongodb.dbURI, ()=>{
