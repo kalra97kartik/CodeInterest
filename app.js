@@ -21,6 +21,8 @@ app.use(cookieSession({
 app.use(passport.initialize());
 app.use(passport.session()); 
 
+console.log('cha cha')
+
 //connect to mongodb
 mongoose.connect(keys.mongodb.dbURI, ()=>{
     console.log('connected to mongodb')
